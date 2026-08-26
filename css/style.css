@@ -642,6 +642,24 @@ details p {
   .footer-container {
     grid-template-columns: 1fr;
     gap: 30px;
+    text-align: center; /* Centraliza textos, títulos e parágrafos */
+  }
+
+  /* Centraliza a logo no mobile */
+  .footer-logo {
+    margin: 0 auto 15px auto;
+  }
+
+  /* Centraliza os ícones das redes sociais */
+  .footer-socials {
+    justify-content: center;
+  }
+
+  /* Remove margens extras e centraliza as listas de links */
+  .footer-links, 
+  .footer-col {
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 }
