@@ -642,25 +642,39 @@ details p {
   .footer-container {
     grid-template-columns: 1fr;
     gap: 30px;
-    text-align: center; /* Centraliza textos, títulos e parágrafos */
+    text-align: center;
   }
 
-  /* Centraliza a logo no mobile */
-  .footer-logo {
-    margin: 0 auto 15px auto;
-  }
-
-  /* Centraliza os ícones das redes sociais */
-  .footer-socials {
-    justify-content: center;
-  }
-
-  /* Remove margens extras e centraliza as listas de links */
-  .footer-links, 
+  /* Garante o alinhamento de cada coluna */
   .footer-col {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+
+  /* Centraliza a imagem da logo */
+  .footer-logo {
+    margin: 0 auto 12px auto;
+  }
+
+  /* Centraliza a lista de ícones sociais */
+  .footer-socials {
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* Remove recuos padrões da lista e centraliza os textos dos links */
+  .footer-links {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Garante que o hover não empurre o texto para a esquerda */
+  .footer-links a:hover {
+    padding-left: 0;
   }
 }
 
